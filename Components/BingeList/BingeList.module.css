@@ -1,0 +1,258 @@
+.bingeSection {
+  /* padding: 96px 50px 0px 145px; */
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.bingeSectionHeading {
+  font-weight: bold;
+  font-size: 42px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.bingeSectionPara {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.flexContainer {
+  /* margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px; */
+}
+
+.listItem {
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.listItemImage {
+  width: 1rem;
+  height: 100%;
+}
+
+.listItem::after {
+  content: '';
+  /* position: absolute; */
+  /* width: 90%; */
+  width: 100%;
+  /* height: 98%; */
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #1c011099;
+  /* background: linear-gradient(180deg,
+      rgba(28, 1, 16, 0.5) 40.09%,
+      #1c0110 80.25%); */
+  opacity: 0;
+  transition: 0.35s ease all;
+  z-index: 1;
+}
+
+.movieMainTitle {
+  margin-bottom: 5px;
+}
+
+.movieSubTitle {
+  min-height: 54px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listItemOverlay {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px 20px;
+}
+
+.listItemContent,
+.listItemButton {}
+
+@media only screen and (min-width: 768px) {
+  .moviedesc {
+    position: relative;
+    margin-bottom: calc(-100% + 64px);
+    transition: 0.5s ease all;
+    opacity: 0;
+  }
+
+  .movieTitleCard {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    bottom: 0px;
+    padding: 30px 50px 20px 20px;
+    z-index: 2;
+  }
+}
+
+.listItem:hover .moviedesc,
+.listItem:focus .moviedesc {
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.listItem:hover:after,
+.listItem:focus:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.posterMobile {
+  min-width: 280px !important;
+  min-height: 414px !important;
+  transition: scale 180ms ease-in-out;
+}
+
+.posterMobile:hover {
+  scale: 1.1;
+}
+
+.listItemButton {
+  display: flex;
+  flex-direction: row;
+  background-color: #7fb51c;
+  padding: 12px 24px;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  border-radius: 2px;
+}
+
+.listItemButtonText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.posterMobile:hover .bingeListImage img {
+  /* background-color: red; */
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5)) brightness(0.6);
+  /* transform: scale(1.1); */
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 480px) {
+  .bingeSection {
+    padding: 80px 10px 20px 10px;
+  }
+
+  .posterMobile:hover img {
+    /* background-color: red; */
+    filter: none;
+    /* transform: scale(1.1); */
+  }
+
+  .bingeSectionHeading {
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 0px;
+  }
+
+  .bingeSectionPara {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 0px;
+  }
+
+  .flexContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    opacity: 1;
+    /* gap: 15px; */
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .posterMobile {
+    min-width: 240px !important;
+    min-height: 355px !important;
+  }
+
+  .posterMobile:hover {
+    scale: none;
+  }
+
+  .listItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listItem:hover:after,
+  .listItem:focus:after {
+    opacity: 0;
+    width: 100%;
+  }
+
+  .listItemContent {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #070606;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+  }
+
+  .listItemButton {
+    display: flex;
+    flex-direction: row;
+    background-color: #7fb51c;
+    padding: 12px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 2px;
+  }
+
+  .listItemButtonText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+
+  .listItemOverlay {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    opacity: 1;
+    gap: 15px;
+  }
+
+  /* .box {
+    width: 175px;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .movieTitle {
+    display: none;
+  }
+}

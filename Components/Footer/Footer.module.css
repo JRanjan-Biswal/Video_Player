@@ -1,0 +1,144 @@
+.footerSection {
+  padding: 0px 50px;
+}
+.footerDisclaimer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 50px; */
+}
+.footerDisclaimerHeading {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.footerDisclaimerPara {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.footerBanner {
+  background-color: #1c0110;
+  margin-top: 64px;
+  padding: 64px 50px;
+}
+
+.footerBannerLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.socialIconsLinks {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  height: 17px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footerContent {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  /* width: 400px; */
+  color: #ffffff;
+  padding-top: 24px;
+  line-height: 21px;
+}
+
+.footerContentBold {
+  font-weight: 700;
+}
+
+.footerLinksSection {
+  margin-top: 40px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #cf0370;
+  border-bottom: 1px solid #cf0370;
+}
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footerIcon {
+  padding-left: 10px;
+  height: 18px;
+}
+
+.footerContentLinks {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footerDateLabel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 480px) {
+  .footerLogoMsd {
+    max-height: 42px !important;
+    max-width: 114px !important;
+  }
+
+  .footerDisclaimerPara {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .footerDisclaimer {
+    padding: 2px 10px;
+  }
+  .footerDisclaimerHeading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 0px;
+  }
+
+  .socialIconsLinks {
+    gap: 20px;
+  }
+  .footerContent {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .footerLinksSection {
+    flex-direction: column;
+    border-top: 1px solid #ffffff;
+    border-bottom: 0px;
+  }
+  .footerLinks {
+    flex-flow: column-reverse;
+  }
+  .footerContentLinks {
+    padding-top: 10px;
+    line-height: 30px;
+  }
+  .footerDateLabel {
+    line-height: 25px;
+  }
+
+  .footerBanner {
+    padding: 20px;
+  }
+}

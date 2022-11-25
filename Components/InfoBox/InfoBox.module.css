@@ -1,0 +1,158 @@
+.infoBox {
+  position: fixed;
+  float: right !important;
+  right: 0px;
+  /* top: 600px; */
+  bottom: 0;
+  z-index: 1000;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 100px 40px 20px 70px;
+  /* -moz-border-radius: ;
+  -webkit-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ; */
+  box-shadow: -34.1043px -26.1897px 51px rgba(0, 0, 0, 0.07),
+    -13.1365px -10.0879px 16.2444px rgba(0, 0, 0, 0.0425185),
+    -2.77887px -2.13397px 4.15556px rgba(0, 0, 0, 0.0274815);
+}
+
+.infoDescBox {
+  position: fixed;
+  float: right !important;
+  /* top: 430px; */
+  z-index: -100;
+  width: 610px;
+  height: 316px;
+  right: 0px;
+  bottom: 0;
+
+  background: #ffffff;
+  box-shadow: 12.8147px 28.2274px 408px rgba(0, 0, 0, 0.07),
+    4.93603px 10.8728px 129.956px rgba(0, 0, 0, 0.0425185),
+    1.04416px 2.30001px 33.2444px rgba(0, 0, 0, 0.0274815);
+  border-radius: 4px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.infoDescCircle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  background: #cf0370;
+  border-radius: 0 0 0 200px;
+  -moz-border-radius: 0 0 0 200px;
+  -webkit-border-radius: 0 0 0 200px;
+  -ms-border-radius: 0 0 0 200px;
+  -o-border-radius: 0 0 0 200px;
+}
+
+.modelImage {
+  position: absolute;
+  right: 0px;
+}
+
+.infoBoxMain {
+}
+
+.infoBoxSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  /* gap: 11px; */
+  font-weight: 700;
+  font-size: 16px;
+  color: #cf0370;
+  position: absolute;
+  letter-spacing: 0.05em;
+  /* text-transform: uppercase; */
+  width: 71.97px;
+  height: 75px;
+  left: calc(50% - 71.97px / 2 + 4.99px);
+  top: calc(50% - 75px / 2 + 1.5px);
+}
+
+.infoDescText {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 390px;
+  padding: 30px;
+  /* text-transform: lowercase; */
+}
+.infoDesSubHead {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+  .infoBox {
+    float: right;
+    right: 0px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px 30px 0px 60px;
+    -webkit-border-radius: 100px 30px 0px 60px;
+    -moz-border-radius: 100px 30px 0px 60px;
+    -ms-border-radius: 100px 30px 0px 60px;
+    -o-border-radius: 100px 30px 0px 60px;
+  }
+  .infoDescBox {
+    position: fixed;
+    float: right !important;
+    top: 450px;
+    z-index: -100;
+    width: 350px;
+    height: 550px;
+    right: 0;
+    top: 150px;
+
+    border-radius: 4px;
+
+    background: #ffffff;
+    box-shadow: 12.8147px 28.2274px 408px rgba(0, 0, 0, 0.07),
+      4.93603px 10.8728px 129.956px rgba(0, 0, 0, 0.0425185),
+      1.04416px 2.30001px 33.2444px rgba(0, 0, 0, 0.0274815);
+    border-radius: 4px;
+    background: #fff;
+  }
+  .modelImage {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .infoDescText {
+    position: absolute;
+    top: 200px;
+    width: 300px;
+  }
+  .infoDescCircle {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 100%;
+    border-radius: 150px 150px 0 0;
+    background: #cf0370;
+    border-radius: 200px 0 0 200px;
+    -webkit-border-radius: 0px 0px 200px 200px;
+    -moz-border-radius: 200px 0 0 200px;
+    -ms-border-radius: 200px 0 0 200px;
+    -o-border-radius: 200px 0 0 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  
+}
